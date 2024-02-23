@@ -81,7 +81,7 @@ fastify.post('/crash', async (request, reply) => {
         let bonusin = false;
 
         if (data['bonusamount'] === 0) {
-            if ((data['step'] > 2 && data['step'] < 6 && random.float(0, 100) < config['bonusposibility']) || data['step'] === 5) {
+            if ((data['step'] > 2 && data['step'] < 6 && randomFloat(0.0, 100.0) < config['bonusposibility']) || data['step'] === 5) {
                 bonus = true;
                 if (random.float(0, 100) < config['bonusin']) {
                     bonusin = true;
