@@ -2,12 +2,12 @@ const controller = require('../controllers/users.controller');
 
 const routes = [
     {
-        url: '/app/users',
+        url: '/users',
         method: 'GET',
         handler: controller.getUser
     },
     {
-        url: '/app/test',
+        url: '/test',
         method: 'GET',
         handler: controller.getTest
     },
